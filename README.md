@@ -67,10 +67,13 @@ Responda no README.md do seu projeto as perguntas abaixo:
 
 # Dicas de leitura
 
-Como fizemos o nosso quadro e muitas pessoas compartilharam dicas legais, clique [aqui](https://funretro.io/publicboard/KYZHJ77eVANTvSNeOQVsGkbGCwr2/861b1ccd-3b44-48e2-8dc6-e7f1fb87b6c8) e sinta-se a vontade para ler todas as dicas compartilhadas durante a aula. 
+Como fizemos o nosso [quadro](https://funretro.io/publicboard/KYZHJ77eVANTvSNeOQVsGkbGCwr2/861b1ccd-3b44-48e2-8dc6-e7f1fb87b6c8) e muitas pessoas compartilharam dicas legais, clique [aqui](https://funretro.io/publicboard/KYZHJ77eVANTvSNeOQVsGkbGCwr2/861b1ccd-3b44-48e2-8dc6-e7f1fb87b6c8) e sinta-se a vontade para ler todas as dicas compartilhadas durante a aula. 
 
 
+# Quadro de informações compartilhadas
 
+Criamos um [quadro](https://funretro.io/publicboard/KYZHJ77eVANTvSNeOQVsGkbGCwr2/861b1ccd-3b44-48e2-8dc6-e7f1fb87b6c8) onde tiramos as nossas dúvidas e compartilhamos links legais durante a aula. 
+Clique [aqui](https://funretro.io/publicboard/KYZHJ77eVANTvSNeOQVsGkbGCwr2/861b1ccd-3b44-48e2-8dc6-e7f1fb87b6c8)
 
 
 
