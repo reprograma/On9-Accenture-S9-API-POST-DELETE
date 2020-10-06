@@ -25,7 +25,53 @@ Em respostas, o Content-Type diz para o client qual é o tipo de conteúdo que a
 
 O método de requisição HTTP DELETE remove o recurso especificado.
 
-# Ferramentas adicionais que vamos utilizar:
+
+# Desafio da semana: 
+
+##### Blog da Reprograma
+
+Criaremos as API'S para as **postagens** no Blog da Reprograma. 
+
+Dados necessários: 
+
+* Id: Integer / Números que serão incrementados a cada criação de um novo post.
+* Data da criação: Date / Data exata da criação do post.
+* Título: String / O nome do post.
+* Conteúdo: String / O conteúdo relacionado ao post. 
+* Etiquetas(Tags): Array / Equitetas relacionadas ao post, por exemplo: "Artigo", "Mulheres na Tecnologia"
+
+
+Utilizando os métodos HTTP, crie as seguintes API'S:
+
+- Criar um post
+
+ * Ao criar o post, o **id** deverá ser incrementado automaticamente. 
+
+
+- Deletar um post 
+
+Lembre-se de utilizar as boas práticas e documentar todas as rotas.
+
+
+**Bônus**
+
+Responda no README.md do seu projeto as perguntas abaixo:
+
+* Motivação 
+
+* Arquitetura
+
+* Ferramentas utilizadas
+
+
+
+# Dicas de leitura
+
+Como fizemos o nosso quadro e muitas pessoas compartilharam dicas legais, clique [aqui](https://funretro.io/publicboard/KYZHJ77eVANTvSNeOQVsGkbGCwr2/861b1ccd-3b44-48e2-8dc6-e7f1fb87b6c8) e sinta-se a vontade para ler todas as dicas compartilhadas durante a aula. 
+
+
+
+
 
 
 
