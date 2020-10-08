@@ -1,22 +1,39 @@
 const postagemModel = require('../models/postagens-models');
+const helper = require('../helpers/helper');
 
 const getPostagens = (requisicao, resposta) =>{
   resposta.status(200).json(postagemModel);
 }
 
-const insertPostagem = (requisicao, resposta) => {
-    //const { postagem } = requisicao.query;
-    console.log(requisicao.body)
+const inserirPostagem = (requisicao, resposta) => {
+  let { titulo, conteudo, etiquetas } = requisicao.body;
+
+   let novaPostagem ={
+     //utilizando o helper
+     id:  helper.obterNovoValor(postagemModel),
+     dataCriacao: helper.novaData(postagemModel),
+     titulo: titulo,
+     conteudo: conteudo,
+     etiquetas: etiquetas, 
+     //utilizando o helper    
+   }
+
+   postagemModel.push(novaPostagem);
+
+   resposta.status(201).json(novaPostagem);
 }
 
- // const { id } = requisicao.params;
+const deletarPostagem = (requisicao, resposta) =>{
+  const { id } = requisicao.params;
+
+ postagemModel.filter(postagem => postagem.id != id);
+
+  resposta.json({ mensagem: "Post deletado com sucesso!"})
+}
   
-  //const tarefa = tarefaModel.find(tarefa => tarefa.id == id);
-
-  //resposta.status(200).json(tarefa);
-
 
 module.exports = {
   getPostagens,
-  insertPostagem  
+  inserirPostagem,
+  deletarPostagem  
 }

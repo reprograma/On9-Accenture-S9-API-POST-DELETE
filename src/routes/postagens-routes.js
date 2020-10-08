@@ -14,14 +14,13 @@ router.get('/postagens', postagemController.getPostagens);
 //@desc Realizar postagens no blog Reprograma
 //@access Public 
 //@endpoint http://localhost:porta/tarefas
-router.post('/postagens', postagemController.insertPostagem);
+router.post('/postagens', postagemController.inserirPostagem);
 
-/*
+
 //@route DELETE postagens
 //@desc Deletar postagens no blog Reprograma
 //@access Public
 //@endpoint http://localhost:porta/postagens
-router.delete('/postagens', postagemController.deletePostagens);
-*/
+router.delete('/postagens', postagemController.deletarPostagem);
 
 module.exports = router; 
