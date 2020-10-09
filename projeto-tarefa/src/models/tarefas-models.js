@@ -16,7 +16,7 @@ const tarefa = [
     prazo: "18/12/2020", 
     responsavel: 'Raquel', 
     dataCriacao: helper.novaData()
-  },
+  }
   
 ];
 

@@ -34,9 +34,9 @@ const obterTituloTarefa =  (requisicao, resposta) => {
 
   //  const novoId = tarefaId.length > 0 ? Math.max.apply(Math, tarefaId) + 1 : 1;
 
-   let { titulo, descricao, prazo, responsavel } = requisicao.body;
+   const { titulo, descricao, prazo, responsavel } = requisicao.body;
 
-   let novaTarefa ={
+   const novaTarefa ={
      //utilizando o helper
      id:  helper.obterNovoValor(tarefaModel),
      titulo: titulo,
@@ -53,11 +53,17 @@ const obterTituloTarefa =  (requisicao, resposta) => {
  }
 
  const deletarTarefa = (requisicao, resposta) =>{
-   const { id } = requisicao.params;
+  const { id } = requisicao.params;
 
-  tarefaModel.filter(tarefa => tarefa.id != id);
+  let tarefasFiltradas = tarefaModel.filter(tarefa => {
+    return tarefa.id == id;
+  })[0];
 
-   resposta.json({ mensagem: "Tarefa deletada com sucesso!"})
+  const index = tarefaModel.indexOf(tarefasFiltradas);
+  
+  tarefaModel.splice(index, 1)
+
+  resposta.json(tarefaModel)
  }
 
 module.exports ={
