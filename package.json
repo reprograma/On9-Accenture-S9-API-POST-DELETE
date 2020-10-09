@@ -1,0 +1,25 @@
+{
+    "name": "on9-accenture-s9-api-post-delete",
+    "version": "1.0.0",
+    "description": "blog reprogama",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/clacla-s8/On9-Accenture-S9-API-POST-DELETE.git"
+    },
+    "author": "Clarice Santos",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/clacla-s8/On9-Accenture-S9-API-POST-DELETE/issues"
+    },
+    "homepage": "https://github.com/clacla-s8/On9-Accenture-S9-API-POST-DELETE#readme",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "nodemon": "^2.0.4"
+    }
+}
