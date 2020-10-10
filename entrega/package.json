@@ -1,0 +1,25 @@
+{
+  "name": "on9-accenture-s9-api-post-delete",
+  "version": "1.0.0",
+  "description": "Exercicio da S9 Reprograma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milenaalmeida/On9-Accenture-S9-API-POST-DELETE.git"
+  },
+  "author": "Milena Almeida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milenaalmeida/On9-Accenture-S9-API-POST-DELETE/issues"
+  },
+  "homepage": "https://github.com/milenaalmeida/On9-Accenture-S9-API-POST-DELETE#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}
