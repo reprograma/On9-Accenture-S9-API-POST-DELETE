@@ -1,0 +1,25 @@
+{
+  "name": "on9-accenture-s9-api-post-delete",
+  "version": "1.0.0",
+  "description": "# Revisão",
+  "main": "server.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rebeca-Coelho/On9-Accenture-S9-API-POST-DELETE.git"
+  },
+  "author": "Rebeca Coelho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rebeca-Coelho/On9-Accenture-S9-API-POST-DELETE/issues"
+  },
+  "homepage": "https://github.com/Rebeca-Coelho/On9-Accenture-S9-API-POST-DELETE#readme"
+}
