@@ -1,0 +1,27 @@
+{
+  "name": "on9-accenture-s9-api-post-delete",
+  "version": "1.0.0",
+  "description": "Motivação \r Usar meus conhecimentos sobre criação de API, métodos HTTP, arquitetura MVC para criar postagens para o blog da reprograma.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raphaelaromao/On9-Accenture-S9-API-POST-DELETE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raphaelaromao/On9-Accenture-S9-API-POST-DELETE/issues"
+  },
+  "homepage": "https://github.com/raphaelaromao/On9-Accenture-S9-API-POST-DELETE#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {}
+}
