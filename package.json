@@ -1,0 +1,25 @@
+{
+  "name": "on9-accenture-s9-api-post-delete",
+  "version": "1.0.0",
+  "description": "Exercicios para entregar na Semana 9 do curso Beckend do Reprograma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luanaCristina/On9-Accenture-S9-API-POST-DELETE.git"
+  },
+  "author": "Luana Cristina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luanaCristina/On9-Accenture-S9-API-POST-DELETE/issues"
+  },
+  "homepage": "https://github.com/luanaCristina/On9-Accenture-S9-API-POST-DELETE#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}
