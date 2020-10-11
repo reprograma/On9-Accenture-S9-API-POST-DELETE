@@ -41,4 +41,21 @@ router.post('/tarefas', tarefaController.criarTarefa);
 **/
 router.delete('/tarefas/:id', tarefaController.deletarTarefa)
 
+
+/**
+@route DELETE tarefas
+@desc Deletar uma tarefa pelo seu identificador
+@access Public 
+@endpoint http://localhost:porta/tarefas/:id
+**/
+router.put('/tarefas/:id', tarefaController.atualizarTarefa)
+
+// /**
+// @route DELETE tarefas
+// @desc Deletar uma tarefa pelo seu identificador
+// @access Public 
+// @endpoint http://localhost:porta/tarefas/:id
+// **/
+// router.patch('/tarefas/:id', tarefaController.atualizarCampoTarefa)
+
 module.exports = router;

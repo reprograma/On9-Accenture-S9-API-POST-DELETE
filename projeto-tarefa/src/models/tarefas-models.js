@@ -7,6 +7,7 @@ const tarefa = [
     descricao: "Preciso ler um livro após acordar",
     prazo: "28/10/2020", 
     responsavel: 'Amanda', 
+    concluida: true,
     dataCriacao: helper.novaData()
   },
   { 
@@ -15,6 +16,7 @@ const tarefa = [
     descricao: "Estudar biologia para o vestibular",
     prazo: "18/12/2020", 
     responsavel: 'Raquel', 
+    concluida: false,
     dataCriacao: helper.novaData()
   }
   
