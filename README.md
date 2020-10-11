@@ -27,5 +27,46 @@ O método de requisição HTTP DELETE remove o recurso especificado.
 
 # Ferramentas adicionais que vamos utilizar:
 
+Desafio da semana:
+Blog da Reprograma
+Criaremos as API'S para as postagens no Blog da Reprograma.
+
+Dados necessários:
+
+Id: Integer / Números que serão incrementados a cada criação de um novo post.
+Data da criação: Date / Data exata da criação do post.
+Título: String / O nome do post.
+Conteúdo: String / O conteúdo relacionado ao post.
+Etiquetas(Tags): Array / Equitetas relacionadas ao post, por exemplo: "Artigo", "Mulheres na Tecnologia"
+Utilizando os métodos HTTP, crie as seguintes API'S:
+
+Criar um post
+Ao criar o post, o id deverá ser incrementado automaticamente.
+Deletar um post
+Lembre-se de utilizar as boas práticas e documentar todas as rotas.
+
+Bônus
+
+Responda no README.md do seu projeto as perguntas abaixo:
+
+# Motivação:
+Criar uma API para aplicar o que aprendemos na semana 9 com os verbos HTTP: POST e DELETE. 
+Fixar todo o conteúdo por meio dos exercícios.
+
+# Arquitetura
+
+
+# Ferramentas utilizadas
+1. VS Code para codificar em JS e Json;
+2. NPM para criar utilizar o Express, Nodemon e Cors na nossa API;
+3. POSTMAN para realizar os testes do que implementamos.
+
+Dicas de leitura
+Como fizemos o nosso quadro e muitas pessoas compartilharam dicas legais, clique aqui e sinta-se a vontade para ler todas as dicas compartilhadas durante a aula.
+
+Quadro de informações compartilhadas
+Criamos um quadro onde tiramos as nossas dúvidas e compartilhamos links legais durante a aula. Clique aqui
+
+
 
 
