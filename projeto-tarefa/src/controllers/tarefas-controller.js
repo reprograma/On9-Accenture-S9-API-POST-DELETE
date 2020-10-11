@@ -1,12 +1,12 @@
 const tarefaModel = require("../models/tarefas-models");
 const helper = require("../helpers/helper");
 
+//GET
 const obterTarefas = (requisicao, resposta) => {
   resposta.status(200).json(tarefaModel);
 };
 
-// podem utilizar o getById
-//www.reprograma.com.br/perfil/:id
+//GET
 const obterIdTarefa = (requisicao, resposta) => {
   const { id } = requisicao.params;
   const tarefa = tarefaModel.find((tarefa) => tarefa.id == id);
@@ -14,10 +14,7 @@ const obterIdTarefa = (requisicao, resposta) => {
   resposta.json(tarefa);
 };
 
-// getByTitle
-// resquest, response
-//req, res
-//www.reprograma.com.br/titulo?titulo=Ler
+//GET
 const obterTituloTarefa = (requisicao, resposta) => {
   const { titulo } = requisicao.query;
   const baseDeDados = tarefaModel.find((tarefa) => tarefa.titulo == titulo);
@@ -25,12 +22,8 @@ const obterTituloTarefa = (requisicao, resposta) => {
   resposta.json(baseDeDados);
 };
 
+//POST
 const criarTarefa = (requisicao, resposta) => {
-  //  const tarefaId = tarefaModel.map(tarefa => tarefa.id);
-  //  let ordermCriacaoNum = tarefaModel.map(tarefa => tarefa.ordem_criacao);
-
-  //  const novoId = tarefaId.length > 0 ? Math.max.apply(Math, tarefaId) + 1 : 1;
-
   let { titulo, descricao, prazo, responsavel } = requisicao.body;
 
   let novaTarefa = {
@@ -49,10 +42,48 @@ const criarTarefa = (requisicao, resposta) => {
   resposta.status(201).json(novaTarefa);
 };
 
+//PUT
+const atualizarTarefa = (requisicao, resposta) => {
+  const { id } = requisicao.params;
+  const filtrarTarefaAtualizada = tarefaModel.filter((tarefa) => {
+    return tarefa.id == id;
+  })[0];
+
+  const index = tarefaModel.indexOf(filtrarTarefaAtualizada);
+
+  const obterChaves = Object.keys(requisicao.body); //pega as chaves do body
+
+  obterChaves.forEach((chave) => {
+    filtrarTarefaAtualizada[chave] = requisicao.body[chave];
+  });
+
+  tarefaModel[index] = filtrarTarefaAtualizada;
+  resposta.status(200).json(tarefaModel[index]);
+};
+
+//PATCH
+const atualizarCampo = (requisicao, resposta) => {
+  const { id } = requisicao.params;
+  const { titulo } = requisicao.body;
+
+  const tarefa = tarefaModel.find((tarefa) => tarefa.id == id);
+
+  tarefa.titulo = titulo;
+
+  resposta.status(200).json(tarefa);
+};
+
+//DELETE
 const deletarTarefa = (requisicao, resposta) => {
   const { id } = requisicao.params;
 
-  tarefaModel.filter((tarefa) => tarefa.id != id);
+  const tarefaFiltrada = tarefaModel.filter((tarefa) => {
+    return tarefa.id == id;
+  })[0];
+
+  const index = tarefaModel.indexOf(tarefaFiltrada);
+
+  tarefaModel.splice(index, 1);
 
   resposta.json(tarefaModel);
 };
@@ -62,5 +93,7 @@ module.exports = {
   obterIdTarefa,
   obterTituloTarefa,
   criarTarefa,
+  atualizarTarefa,
+  atualizarCampo,
   deletarTarefa,
 };

@@ -1,7 +1,7 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
-const tarefaController = require('../controllers/tarefas-controller');
+const tarefaController = require("../controllers/tarefas-controller");
 
 /**
 @route GET tarefas
@@ -9,7 +9,7 @@ const tarefaController = require('../controllers/tarefas-controller');
 @access Public 
 @endpoint http://localhost:porta/tarefas
 **/
-router.get('/tarefas', tarefaController.obterTarefas);
+router.get("/tarefas", tarefaController.obterTarefas);
 
 /**
 @route GET tarefas/titulo
@@ -17,14 +17,14 @@ router.get('/tarefas', tarefaController.obterTarefas);
 @access Public 
 @endpoint http://localhost:porta/tarefas/titulo
 **/
-router.get('/tarefas/titulo', tarefaController.obterTituloTarefa);
+router.get("/tarefas/titulo", tarefaController.obterTituloTarefa);
 /**
 @route GET tarefas/:id
 @desc Retornar apenas uma única tarefa pelo seu id: identificador
 @access Public 
 @endpoint http://localhost:porta/tarefas/:id
 **/
-router.get('/tarefas/:id', tarefaController.obterIdTarefa);
+router.get("/tarefas/:id", tarefaController.obterIdTarefa);
 
 /**
 @route POST tarefas
@@ -32,7 +32,23 @@ router.get('/tarefas/:id', tarefaController.obterIdTarefa);
 @access Public 
 @endpoint http://localhost:porta/tarefas
 **/
-router.post('/tarefas', tarefaController.criarTarefa);
+router.post("/tarefas", tarefaController.criarTarefa); //lembrar de editar o body no insomnia
+
+/**
+@route PUT tarefas
+@desc Atualizar uma tarefa
+@access Public 
+@endpoint http://localhost:porta/tarefas/:id
+**/
+router.put("/tarefas/:id", tarefaController.atualizarTarefa); //lembrar de editar o body no insomnia
+
+/**
+@route PATCH tarefas
+@desc Atualizar o título da tarefa
+@access Public 
+@endpoint http://localhost:porta/tarefas/:id
+**/
+router.patch("/tarefas/:id", tarefaController.atualizarCampo); //lembrar de editar somente o título no body
 
 /**
 @route DELETE tarefas
@@ -40,6 +56,6 @@ router.post('/tarefas', tarefaController.criarTarefa);
 @access Public 
 @endpoint http://localhost:porta/tarefas/:id
 **/
-router.delete('/tarefas/:id', tarefaController.deletarTarefa)
+router.delete("/tarefas/:id", tarefaController.deletarTarefa);
 
 module.exports = router;
