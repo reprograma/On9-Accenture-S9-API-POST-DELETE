@@ -1,0 +1,24 @@
+{
+  "name": "desafio-semana",
+  "version": "1.0.0",
+  "description": "blog reprograma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon servidor.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miclicia/On9-Accenture-S9-API-POST-DELETE.git"
+  },
+  "author": "Michelle Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miclicia/On9-Accenture-S9-API-POST-DELETE/issues"
+  },
+  "homepage": "https://github.com/miclicia/On9-Accenture-S9-API-POST-DELETE#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}
